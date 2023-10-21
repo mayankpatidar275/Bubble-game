@@ -1,4 +1,4 @@
-let timer = 6;
+let timer = 60;
 let score = 0;
 let hitrn = 0;
 let gameStarted = false;
@@ -41,7 +41,7 @@ function getHitval(){
 document.querySelector("#startbtn").addEventListener("click", ()=>{
     gameStarted = true;
     score = 0;
-    timer = 6;
+    timer = 60;
     document.querySelector("#scoreval").textContent = score;
     makeBubble();
     runTimer();
@@ -58,4 +58,3 @@ document.querySelector("#pbtm").addEventListener("click", (details)=>{
 })
 
 makeBubble();
-// getHitval();
